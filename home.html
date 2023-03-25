@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<style>
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #eee;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+/* Hero section styles */
+#hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+#hero .btn-primary {
+  background-color: #ff3f3f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#hero .btn-primary:hover {
+  background-color: #333;
+}
+
+/* About section styles */
+#about {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+#about .btn-secondary {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#about .btn-secondary:hover {
+  background-color: #666;
+}
+
+/* Services section styles */
+#services {
+  padding: 50px;
+}
+
+#services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#services ul {
+  list-style: none;
+}
+
+#services li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Contact section styles */
+#contact {
+  background-color: #eee;
+  padding: 50px;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#contact form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact form input,
+#contact form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#contact form button {
+  background-color: #ff3f3f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  border: none
+</style>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="hero">
+      <h1>Welcome to My Website</h1>
+      <p>Learn more about what we do and how we can help you.</p>
+      <a href="#" class="btn-primary">Learn More</a>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a team of professionals dedicated to providing quality services to our clients.</p>
+      <a href="#" class="btn-secondary">Our Services</a>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; My Website 2023</p>
+  </footer>
+</body>
+</html>
